@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Hotel Room</h1>
+        
+        <form method="post" action="">
+            <fieldset class="personal-section">
+                <legend>Personal Data</legend>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class="form-row">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="emailaddress">Email Address</label>
+                    <input type="text" id="emailaddress" name="emailaddress" />
+                </div>
+                <div class="form-row">
+                    <label for="telpnumber">Telp Number</label>
+                    <input type="text" id="telpnumber" name="telpnumber" />
+                </div>
+            </fieldset>
+            
+            <fieldset class="reservation-section">
+                <legend>Reservation Room Form</legend>
+                <div class="form-row">
+                    <label for="reservationname">Reservation Name</label>
+                    <input type="text" id="reservationname" name="reservationname" />
+                </div>
+                <div class="form-row">
+                    <label for="bookingdate">Booking Date</label>
+                    <input type="text" id="bookingdate" name="bookingdate" />
+                </div>
+                <div class="form-row">
+                    <label for="roomtype">Room Type</label>
+                    <select id="roomtype" name="roomtype">
+                        <option value="">Select Room Type</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="standard">Standard</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="bedtype">Bed Type</label>
+                    <select id="bedtype" name="bedtype">
+                        <option value="">Select Bed Type</option>
+                        <option value="single">Single Bed</option>
+                        <option value="double">Double Bed</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label>Breakfast</label>
+                    <div class="radio-group">
+                        <input type="radio" id="breakfast1" name="breakfast" value="with" checked="checked" />
+                        <label for="breakfast1" class="radio-label">With Breakfast</label>
+                        <input type="radio" id="breakfast2" name="breakfast" value="without" />
+                        <label for="breakfast2" class="radio-label">Without Breakfast</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="payment-section">
+                <legend>Payment</legend>
+                <div class="form-row">
+                    <label for="checkindate">Check In Date</label>
+                    <input type="text" id="checkindate" name="checkindate" />
+                </div>
+                <div class="form-row">
+                    <label for="checkoutdate">Check Out Date</label>
+                    <input type="text" id="checkoutdate" name="checkoutdate" />
+                </div>
+                <div class="form-row">
+                    <label for="paymentmethod">Payment Method</label>
+                    <select id="paymentmethod" name="paymentmethod">
+                        <option value="">Select Payment Method</option>
+                        <option value="cash">Cash</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <div class="submit-wrapper">
+                <input type="submit" id="submit" name="submit" value="Complete Reservation" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
